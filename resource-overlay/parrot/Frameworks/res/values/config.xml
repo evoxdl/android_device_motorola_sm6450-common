@@ -28,9 +28,9 @@
              eutran5gc : eutran5gcSupportedRelease
     -->
     <string-array name="config_telephonyEuiccDeviceCapabilities" translatable="false">
-        <item>gsm,9</item>
+        <item>gsm,11</item>
         <item>utran,9</item>
-        <item>eutran,15</item>
+        <item>eutran,16</item>
     </string-array>
 
     <!-- Default files to pin via Pinner Service -->

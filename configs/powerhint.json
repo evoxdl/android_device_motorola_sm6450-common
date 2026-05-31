@@ -290,7 +290,6 @@
       "Name": "L3MinFreq",
       "Path": "/sys/devices/system/cpu/bus_dcvs/L3/boost_freq",
       "Values": [
-        "1440000",
         "1420800",
         "1382400",
         "1248000",
@@ -508,7 +507,7 @@
       "PowerHint": "LAUNCH",
       "Node": "L3MinFreq",
       "Duration": 3000,
-      "Value": "1440000"
+      "Value": "1420800"
     },
     {
       "PowerHint": "LAUNCH",

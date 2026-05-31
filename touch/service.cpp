@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "lineage.touch-service.moto_sm7435"
+#define LOG_TAG "lineage.touch-service.moto_sm6450"
 
 #include "TouchscreenGesture.h"
 
