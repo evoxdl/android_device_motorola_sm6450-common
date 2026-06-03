@@ -4,6 +4,9 @@ import /vendor/etc/init/hw/init.mmi.chipset.rc
 # Target-specific file
 import /vendor/etc/init/hw/init.mmi.overlay.rc
 
+on early-init
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules zram
+
 on early-boot
     write /sys/module/subsystem_restart/parameters/disable_restart_work 0x0
 
