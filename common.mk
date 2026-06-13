@@ -98,6 +98,9 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/audio/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
@@ -138,6 +141,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
     android.hardware.health-service.qti_recovery
+
+# Dolby
+PRODUCT_PACKAGES += \
+    DolbyAtmos
 
 # Init
 PRODUCT_PACKAGES += \
@@ -373,6 +380,7 @@ PRODUCT_COPY_FILES += \
 # VINTF
 DEVICE_FRAMEWORK_MANIFEST_FILE += device/motorola/sm6450-common/vintf/framework_manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    device/motorola/sm6450-common/vintf/device_framework_matrix.xml
     hardware/motorola/vintf/device_framework_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
