@@ -68,10 +68,11 @@ PRODUCT_PACKAGES += \
     libagm_compress_plugin \
     libagm_mixer_plugin \
     libagm_pcm_plugin \
+    libfmpal \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libfmpal \
+    libvolumelistener \
     sound_trigger.primary.parrot \
     vendor.qti.hardware.AGMIPC@1.0-service
 
